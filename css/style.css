@@ -1,7 +1,74 @@
+@import url(variables.css);
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
+
+body{
+
+    background-color: var(--color-primary);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    padding: 30px;
+    grid-auto-rows: 50px;
+    width: 800px;
+    height: 700px;
+    background-color: var(--color-secundary);
+    border-radius: 10px;
+    margin: 15px auto;
+    grid-template-areas: 
+    "MacBookAir MacBookProApps MacBookProApps"
+    "MacBookAir MacBookProApps MacBookProApps"
+    "MacBookAirScreen MacBookAirScreen MacBookPro"
+    "MacBookAirScreen MacBookAirScreen MacBookPro"
+    ;
+}
+
+.container div{
+
+    border-radius: 10px;
+    background-color: var(--color-primary);
+}
+
+.item__1{
+
+    grid-area: MacBookAir;
+}
+
+.item__2{
+
+    grid-area: MacBookProApps;
+}
+
+.item__3{
+
+    grid-area: MacBookAirScreen;
+
+}
+
+.item__4{
+
+    grid-area: MacBookPro;
+}
+
+@media (width < 800px){
+
+
+    .container{
+        width: 100vw;
+        grid-template-areas: 
+        "MacBookAir MacBookAir MacBookAir "
+        "MacBookProApps MacBookProApps MacBookProApps"
+        "MacBookAirScreen MacBookAirScreen MacBookAirScreen"
+        "MacBookPro MacBookPro MacBookPro ";
+    }
+} 
