@@ -78,6 +78,10 @@ body{
 
 }
 
+.item:nth-child(5) img{
+    object-fit: contain;
+}
+
 .item:nth-child(6){
     grid-area: device;
 }
@@ -184,7 +188,7 @@ body{
 
     }
 
-    .item:nth-child(8) img, .item:nth-child(11) img, .item:nth-child(14) img, .item:nth-child(10) img, .item:nth-child(12) img, .item:nth-child(5) img, .item:nth-child(6) img, .item:nth-child(15) img{
+    .item:nth-child(8) img, .item:nth-child(11) img, .item:nth-child(14) img, .item:nth-child(10) img, .item:nth-child(12) img, .item:nth-child(5) img, .item:nth-child(6) img{
         object-fit: contain;
         border-radius: 100%;
     }
