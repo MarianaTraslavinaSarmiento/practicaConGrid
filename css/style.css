@@ -5,3 +5,123 @@
     text-decoration: none;
 
 }
+
+body{
+
+    display: grid;
+    grid-template: repeat(16, 1fr) / repeat(20, 1fr);
+    background-color: #ffff;
+    width: 100%;
+    height: 100vh;
+    gap: 15px;
+    padding: 20px 80px;
+    grid-template-areas: 
+    "nits nits nits nits nits nits gps gps gps gps gps depth depth depth carbon carbon carbon carbon carbon carbon"
+    "nits nits nits nits nits nits gps gps gps gps gps depth depth depth carbon carbon carbon carbon carbon carbon"
+    "nits nits nits nits nits nits gps gps gps gps gps depth depth depth carbon carbon carbon carbon carbon carbon"
+    "nits nits nits nits nits nits gps gps gps gps gps depth depth depth carbon carbon carbon carbon carbon carbon"
+    "nits nits nits nits nits nits product product product product product product product product carbon carbon carbon carbon carbon carbon"
+    "mountain mountain mountain ultraWatch ultraWatch ultraWatch product product product product product product product product carbon carbon carbon carbon carbon carbon"
+    "mountain mountain mountain ultraWatch ultraWatch ultraWatch product product product product product product product product battery battery battery meters meters meters"
+    "mountain mountain mountain ultraWatch ultraWatch ultraWatch product product product product product product product product battery battery battery meters meters meters"
+    "mountain mountain mountain ultraWatch ultraWatch ultraWatch product product product product product product product product battery battery battery meters meters meters"
+    "newBand newBand newBand newBand newBand newBand product product product product product product product product button button button button button button"
+    "newBand newBand newBand newBand newBand newBand product product product product product product product product button button button button button button"
+    "newBand newBand newBand newBand newBand newBand product product product product product product product product button button button button button button"
+    "S9sip S9sip S9sip S9sip device device newCycling newCycling precision precision precision precision flashlight flashlight gesture gesture gesture gesture gesture gesture"
+    "S9sip S9sip S9sip S9sip device device newCycling newCycling precision precision precision precision flashlight flashlight gesture gesture gesture gesture gesture gesture"
+    "S9sip S9sip S9sip S9sip device device newCycling newCycling precision precision precision precision flashlight flashlight gesture gesture gesture gesture gesture gesture"
+    "S9sip S9sip S9sip S9sip device device newCycling newCycling precision precision precision precision flashlight flashlight gesture gesture gesture gesture gesture gesture"
+    "S9sip S9sip S9sip S9sip device device newCycling newCycling precision precision precision precision flashlight flashlight gesture gesture gesture gesture gesture gesture";
+
+}
+
+.item{
+
+    background: #ececec;
+    border-radius: 30px;
+    
+
+
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+
+}
+
+.item:first-child{
+    grid-area: nits;
+
+}
+
+.item:nth-child(2){
+    grid-area: mountain;
+
+}
+
+.item:nth-child(3){
+    grid-area: ultraWatch;
+
+}
+
+.item:nth-child(4){
+    grid-area: newBand;
+
+}
+
+.item:nth-child(5){
+    grid-area: S9sip;
+
+}
+
+.item:nth-child(6){
+    grid-area: device;
+}
+
+.item:nth-child(7){
+    grid-area: gps;
+}
+
+.item:nth-child(8){
+    grid-area: depth;
+}
+
+.item:nth-child(9){
+    grid-area: product;
+}
+
+.item:nth-child(10){
+    grid-area: newCycling;
+}
+
+.item:nth-child(11){
+    grid-area: precision;
+}
+
+.item:nth-child(12){
+    grid-area: flashlight;
+}
+
+.item:nth-child(13){
+    grid-area: carbon;
+}
+
+.item:nth-child(14){
+    grid-area: battery;
+}
+
+.item:nth-child(15){
+    grid-area: meters;
+}
+
+.item:nth-child(16){
+    grid-area: button;
+}
+
+.item:nth-child(17){
+    grid-area: gesture;
+}
