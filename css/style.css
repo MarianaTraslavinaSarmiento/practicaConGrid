@@ -172,9 +172,9 @@ body{
         "carbon carbon carbon carbon carbon carbon carbon carbon carbon carbon"
         "carbon carbon carbon carbon carbon carbon carbon carbon carbon carbon"
         "carbon carbon carbon carbon carbon carbon carbon carbon carbon carbon"
-        "battery battery battery battery battery dive dive dive dive dive"
-        "battery battery battery battery battery dive dive dive dive dive"
-        "battery battery battery battery battery dive dive dive dive dive"
+        "battery battery battery battery battery meters meters meters meters meters"
+        "battery battery battery battery battery meters meters meters meters meters"
+        "battery battery battery battery battery meters meters meters meters meters"
         "button button button button button button button button button button"
         "button button button button button button button button button button"
         "gesture gesture gesture gesture gesture gesture gesture gesture gesture gesture"
@@ -184,7 +184,7 @@ body{
 
     }
 
-    .item:nth-child(8) img, .item:nth-child(11) img, .item:nth-child(14) img{
+    .item:nth-child(8) img, .item:nth-child(11) img, .item:nth-child(14) img, .item:nth-child(10) img, .item:nth-child(12) img, .item:nth-child(5) img, .item:nth-child(6) img, .item:nth-child(15) img{
         object-fit: contain;
         border-radius: 100%;
     }
@@ -192,7 +192,9 @@ body{
     @media (max-width: 1630px){
 
         body {
-            padding: 10px;
+            padding: 10px;  
         }
+
+
     }
 }
