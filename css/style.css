@@ -12,6 +12,7 @@
 body{
 
     background-color: var(--color-primary);
+
 }
 .container {
     display: grid;
@@ -155,8 +156,6 @@ body{
     display: flex;
     margin-top: 30px
 
-    
-
 }
 
 /**************************************************** ITEM__4 ********************************************************/
@@ -223,5 +222,33 @@ body{
         "MacBookPro MacBookPro MacBookPro ";
     }
 
+    .item__2 img:last-child{
 
-} 
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        margin-top: 5px;
+        object-fit: contain;
+
+    }
+
+    .container{
+
+        height: 1500px;
+    }
+
+    .item__3 img:last-child{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        object-fit: contain;
+
+    }
+
+
+}
+
