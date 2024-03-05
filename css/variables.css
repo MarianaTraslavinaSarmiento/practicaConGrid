@@ -2,4 +2,7 @@
     --color-primary: #ffff;
     --color-secundary: #f5f5f5;
     --color-transparencia: rgba(0, 0, 0, 0.287);
+    --color-tertiary: #d26535;
+    --color-cuatertiary: #000;
+    --color-gray: #818282;
 }

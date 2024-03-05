@@ -25,6 +25,7 @@ body{
     background-color: var(--color-secundary);
     border-radius: 10px;
     margin: 15px auto;
+    height: 95vh;
     grid-template-areas: 
     "MacBookAir MacBookProApps MacBookProApps"
     "MacBookAir MacBookProApps MacBookProApps"
@@ -37,7 +38,11 @@ body{
 
     border-radius: 10px;
     background-color: var(--color-primary);
+    padding-block: 20px;
+    
 }
+
+/************************************* ITEM__1 *****************************************/
 
 .item__1{
 
@@ -45,7 +50,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     gap: 10px;
     
 }
@@ -53,27 +58,148 @@ body{
 .item__1 img:first-child{
 
     object-fit: contain;
-    width: 100%;
-    
+    width: 100%;   
+}
+
+.item__1 p:nth-child(2){
+
+    color: var(--color-tertiary);
+    font-size: 0.8em;
+}
+
+.item__1 b:nth-child(3){
+
+    font-size: 1.2em;
+}
+.item__1 p:nth-child(4){
+
+    color: var(--color-cuatertiary);
+    text-align: center;
+    font-size: 1em;
+
+}
+
+.item__1 p:nth-child(5){
+
+    font-size: 0.8em;
+    color: var(--color-gray);
+}
+
+.item__1 img:last-child{
+    width: 30%;
+
 }
 
 
+/******************************************* ITEM__2 **************************************************/
 
 .item__2{
 
     grid-area: MacBookProApps;
+    padding: 32px;
+    position: relative
+    
 }
 
+.item__2 :first-child{
+
+    font-size: 1.1em;
+    
+    
+}
+
+.item__2 :nth-child(3){
+
+    font-size: 1.6em;
+
+}
+
+.item__2 img:last-child{
+
+    height: 80%;
+    right: -30px;
+    position: absolute;
+
+}
+
+/***************************************** ITEM__3 ****************************************************/
 .item__3{
 
     grid-area: MacBookAirScreen;
+    padding-inline: 32px
 
 }
+
+.item__3 :first-child{
+
+    font-size: 1.1em;
+    
+}
+
+.item__3 :nth-child(3){
+
+    font-size: 1.6em;
+}
+
+.item__3 img:last-child{
+
+    height: 80%;
+    
+
+}
+
+
+/**************************************************** ITEM__4 ********************************************************/
+
 
 .item__4{
 
     grid-area: MacBookPro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 10px
+
+    
 }
+
+.item__4 img:first-child{
+
+    object-fit: contain;
+    width: 100%;   
+}
+
+.item__4 p:nth-child(2){
+
+    color: var(--color-tertiary);
+    font-size: 0.8em;
+}
+
+.item__4 b:nth-child(3){
+
+    font-size: 1.2em;
+}
+.item__4 p:nth-child(4){
+
+    color: var(--color-cuatertiary);
+    text-align: center;
+    margin-top: 0.8em;
+
+}
+
+.item__4 p:nth-child(5){
+
+    font-size: 0.8em;
+    color: var(--color-gray);
+}
+
+.item__4 img:last-child{
+    width: 30%;
+
+}
+
+
 
 @media (width < 800px){
 
@@ -86,4 +212,5 @@ body{
         "MacBookAirScreen MacBookAirScreen MacBookAirScreen"
         "MacBookPro MacBookPro MacBookPro ";
     }
+
 } 
